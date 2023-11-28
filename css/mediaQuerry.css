@@ -1,0 +1,113 @@
+@media  (max-width:768px) {
+
+    .sobreMi>.contenedor{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+
+    .sobreMi>.contenedor>article{
+        height: 100%;
+        width: 100%;
+    }
+    .inicio>.contenedor{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        box-shadow: inset 5px 0px 20px var(--colorFondoGeneral);
+        align-items: center;
+        width: 50%;
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 0%, hsla(264, 90%, 59%, 1) 100%);
+    }
+    .inicio>.contenedor:hover{
+        animation: none;
+    }
+
+    .contenedor__h1{
+        flex-direction: row;
+        gap: 5%;
+    }
+
+}
+@media (max-width:700px) {
+    h1{
+        font-size: xx-large;
+    }
+    ul>div{
+        flex-direction: column;
+    }
+    ul{
+        width: 80px;
+        height: 30px;
+    }
+    ul>div>div{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    /* linea1
+    transform: rotate(315deg);
+    linea2
+    transform:rotate(45deg) translateX(-5px);
+    */
+    .linea1{
+        transform: translate(-13px) rotate(60deg);
+    }
+    .linea2{
+        transform: translate(13px) rotate(300deg) translate(6px);
+    }
+    ul:hover .linea1{
+        animation: linea1 2s ease forwards;
+    }
+    ul:hover .linea2{
+        animation: linea2 2s ease forwards;
+    }
+
+    ul:hover li{
+        width: 80vw;
+        border-radius: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 10vw;
+    }
+    ul:hover .li__inicio{
+        
+        margin-top: 40px;
+    }
+    ul:hover .li__misTtabajos{
+        margin-top: 80px;
+    }
+    ul:hover .li__sobreMi{
+        margin-top: 120px;
+    }
+    ul:hover .li__habilidades{
+        margin-top: 160px;
+    }
+    ul:hover .li__contacto{
+        margin-top: 200px;
+    }
+    @keyframes linea1 {
+        from{
+            transform: translate(-11px) rotate(60deg);
+        }
+        to{
+            transform: rotate(315deg);
+        }
+    }
+    @keyframes linea2 {
+        from{
+            transform: translate(11px) rotate(300deg) translate(4px);
+        }
+        to{
+            transform:rotate(45deg) translateX(-5px);
+        }
+    }
+    
+
+    ul>div>li{
+        display: none;
+    }
+}

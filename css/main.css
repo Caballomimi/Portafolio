@@ -1,0 +1,410 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+main{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--colorFondoGeneral);
+}
+section:first-child{
+    margin-top: 15vh;
+}
+section {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    margin-top: 20px;
+    width: 90%;
+    height: 10px;
+    background-image: radial-gradient(at 50% -3.03%, #70498d 0, #432f62 25%, #1a1333 50%, #000003 75%, #000000 100%);
+    border: none;
+    border-radius: 5px;
+}
+h2{
+    font-family: miFuente;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+.contenedor{
+    height: 80%;
+    width: 80%;
+}
+a{
+    text-decoration: none;
+}
+
+/* INICIO */
+.inicio{
+    height: 85vh;
+}
+.inicio>.contenedor{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 43%, hsla(264, 90%, 59%, 1) 100%);
+    box-shadow: inset 5px 0px 20px var(--colorFondoGeneral);
+    
+}
+.inicio>.contenedor:hover .contenedor__h1{
+    animation: adios 1s ease forwards;
+}
+@keyframes adios{
+    0%{
+        flex-direction: column;
+    }
+    100%{
+        flex-direction: row;
+        gap: 5%;
+    }
+}
+.inicio>.contenedor:hover{
+    animation: hola 1s ease forwards;
+    
+}
+@keyframes hola{
+    0%{
+        width: 80%;
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 45%, hsla(264, 90%, 59%, 1) 100%);
+    }
+    25%{
+        
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 30%, hsla(264, 90%, 59%, 1) 100%)
+    }
+    50%{
+        
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 21%, hsla(264, 90%, 59%, 1) 100%);
+    }
+    75%{
+        
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 10%, hsla(264, 90%, 59%, 1) 100%);
+    }
+    100%{
+
+        align-items: center;
+        width: 40%;
+        background: -webkit-linear-gradient(135deg, hsla(253, 46%, 14%, 1) 0%, hsla(264, 90%, 59%, 1) 100%);
+    
+    }
+}
+.inicio>.contenedor>*{
+    width: 50%;
+}
+.contenedor__h1{
+    height: 50% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-family: 'MiFuente';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    font-size:xxx-large;
+}
+
+.contenedor .redes{
+    height: 20%;
+    padding: 10px;
+}
+.contenedor__button{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: var(--rgbaprimary4);
+    padding: 10px;
+    width: 100px;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.425);
+}
+
+/* MIS TRABAJOS */
+
+.misTrabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.misTrabajos .contenedor__img{
+    width: 80%;
+    height: 20vh;
+}
+.misTrabajos .contenedor__img:hover{
+    transform: scale(1.2);
+}
+.misTrabajos>.contenedor{
+    width: 90%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+.misTrabajos>.contenedor>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+    width: 30%;
+    min-width: 300px;
+    padding: 20px;
+}
+
+h3{
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    padding: 20px;
+}
+
+/* SOBRE MI */
+
+.sobreMi>.contenedor>article>.contenedor__img{
+    width: 50vh;
+    height: 50vh;
+    
+}
+.sobreMi>.contenedor>article>.contenedor__img>img{
+    border-radius: 50%;
+}
+.sobreMi>.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sobreMi>.contenedor>article{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 49%;
+    height: 70vh;
+    min-width: 50vh;
+
+}
+
+
+.sobreMi h3{
+    text-size-adjust: 0.54;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+.sobreMi p{
+    
+    padding: 10px;
+
+}
+/* HABILIDADES */
+
+.habilidades>.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.habilidades>.contenedor>article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    width: 49%;
+    height: 60vh;
+    min-width: 300px;
+}
+h4{
+    font-size: xx-large;
+    padding: 20px;
+}
+table{
+    height: 100%;
+    width: 100%;
+}
+th{
+    font-size: x-large;
+    align-items: center;
+    width: 33% ;
+    height: 50%;
+}
+td{
+
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+.td__contenedor>div:last-child{
+    width: 100%;
+    background-color: var(--rgbaprimary5);
+    height: 10%;
+}
+.td__contenedor>div:first-child{
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
+    width: 80%;
+    height: 0%;
+}
+.td__contenedor{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+table:hover .html{
+    animation: html 1s ease forwards;
+}
+@keyframes html{
+    from{
+        height: 0%;
+        background-color: none;
+    }
+    to{
+        height: 90%;
+        background-color: orangered;
+    }
+}
+table:hover .css{
+    animation: css 1s ease forwards;
+}
+@keyframes css{
+    from{
+        height: 0%;
+        background-color: none;
+    }
+    to{
+        height: 90%;
+        background-color: blue;
+    }
+}
+table:hover .js{
+    animation: js 1s ease forwards;
+}
+@keyframes js{
+    from{
+        height: 0%;
+        background-color: none;
+    }
+    to{
+        height: 80%;
+        background-color: yellow;
+    }
+}
+table:hover .java{
+    animation: java 1s ease forwards;
+}
+@keyframes java{
+    from{
+        height: 0%;
+        background-color: none;
+    }
+    to{
+        height: 30%;
+        background-color: white;
+    }
+}
+table:hover .php{
+    animation: php 1s ease forwards;
+}
+@keyframes php{
+    from{
+        height: 0%;
+        background-color: none;
+    }
+    to{
+        height: 60%;
+        background-color: rgb(0, 0, 121);
+    }
+}
+/* CONTACTO */
+
+.contacto{
+    width: 100%;
+    height: 70vh;
+}
+.contacto>.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+}
+form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+}
+form>div{
+
+    display: flex;
+    height: 20%;
+    width: 100%;
+}
+form>div>label{
+    text-align: center;
+    height: 20%;
+    width: 20%;
+}
+form>div>input{
+    padding: 10px;
+    color: black;
+    height: 30%;
+    width: 80%;
+}
+form>div>textarea{
+    padding: 10px;
+    color: black;
+    height: 80%;
+    width: 80%;
+}
+form>div:last-child{
+    height: 60%;
+}

@@ -1,0 +1,14 @@
+:root{
+    --colorFondoGeneral:rgb(26, 19, 51);
+    --colorFondoHeader:rgb(14, 11, 22);
+    --rgbaprimary0:  rgba( 26, 19, 51,1); 	/* Main Primary color */
+    --rgbaprimary1: rgba( 63, 55, 90,1);
+    --rgbaprimary2: rgba( 40, 33, 68,1);
+    --rgbaprimary3: rgba( 14,  8, 34,1);
+    --rgbaprimary4: rgba(  5,  2, 17,1);
+    --rgbaprimary5:rgb(132,56,255);
+}
+@font-face {
+    font-family: 'MiFuente'; /* Nombre que le asignas a tu fuente */
+    src: url('../font/Teko-Bold.ttf') format('truetype'); /* Ruta de la fuente */
+}
